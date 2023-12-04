@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final/"
+     xml:base="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#hasCure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#hasCure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Cure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#hasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#hasDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#hasMedicalInfo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#hasMedicalInfo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Health_Stats"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#hasPrecautions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#hasPrecautions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Cure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_Age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_BMI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_BMI">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Health_Stats"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_BloodPressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_BloodPressure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Health_Stats"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_BrainStroke -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_BrainStroke">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#BrainStroke"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_CardioDisease -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_CardioDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#CardioVascular"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_Diabetes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_Diabetes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Diabetes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_PatientId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_PatientId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_PhysicalActivity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_PhysicalActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Health_Stats"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_SmokingHabit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_SmokingHabit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Health_Stats"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_cure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_cure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Cure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#has_gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#BrainStroke -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#BrainStroke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#CardioVascular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#CardioVascular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Cure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Cure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Diabetes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Diabetes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Health_Stats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Health_Stats"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Race -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Race"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#BrainStrokePatient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#BrainStrokePatient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#CardioVascularPatient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#CardioVascularPatient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#DiabetesPatient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#DiabetesPatient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tlam23/ontologies/2023/11/Final#Patient"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
